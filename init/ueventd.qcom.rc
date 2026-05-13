@@ -62,19 +62,19 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/hgsl                 0666   system     system
 /dev/iio:device*          0664   system     system
 
-#permissions for UFS RPMB BSG device node
+# permissions for UFS RPMB BSG device node
 /dev/0:0:0:49476          0600   system     system
 
-#permissions for CSVT
+# permissions for CSVT
 /dev/smd11                0660   radio      radio
 
-#permsissions for BT/FM
+# permissions for BT/FM
 /dev/smd2                 0660   bluetooth  bluetooth
 /dev/smd3                 0660   bluetooth  bluetooth
 /dev/btpower              0660   bluetooth  system
 /dev/btfmslim             0660   bluetooth  system
 
-#permissions for pta
+# permissions for pta
 /dev/pta                  0660   system     system
 
 /dev/radio0               0640   system     system
@@ -163,21 +163,21 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/system_health_monitor 0644  radio      system
 /dev/mdss_rotator         0664   system     system
 
-#QDSS
+# QDSS
 /dev/byte-cntr            0660   system    oem_2902
 /dev/mhi_qdss             0660   system    oem_2902
 /sys/class/qdss_bridge/mhi_qdss  mode      0660     system   oem_2902
 
-#qg
+# qg
 /dev/qg                   0660  system     system
 /dev/qg_battery           0660  system     system
 
-#qvr
+# qvr
 /dev/qvr_external_sensor_ioctl      0660  system  system
 /dev/bus/usb/*                      0660  root    usb
 /dev/hidraw*                        0660  root    usb
 
-#rawdump
+# rawdump
 /dev/block/platform/soc/*/by-name/rawdump       0660   root     system
 
 # wlan
@@ -200,7 +200,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/msm_rotator          0660   system     system
 /dev/sdsprpc-smd          0660   system     system
 
-#permissions for audio
+# permissions for audio
 /dev/wcd_dsp0_control     0660   system     audio
 /dev/wcd-dsp-glink        0660   system     audio
 /dev/audio_slimslave      0660   system     audio
@@ -302,12 +302,10 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/battery_data         0660   system     system
 
 # wlan
-/dev/wcnss_wlan           0660   system     system
-/dev/wcnss_ctrl           0660   system     system
 /sys/devices/soc/600000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/wlan0/queues/rx-* rps_cpus 0660 system system
 /sys/devices/soc/600000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/p2p0/queues/rx-* rps_cpus 0660 system system
 
-#nfc permissions
+# nfc permissions
 /dev/nfc-nci              0660    nfc         nfc
 /dev/nq-nci               0660    nfc         nfc
 /dev/assd                 0660    nfc         nfc
@@ -331,7 +329,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/fts/touch_aoi aoi_set 0660 root system
 /sys/class/fts/touch_aoi power_set 0660 root system
 
-#ImproveTouch device
+# ImproveTouch device
 /dev/hbtp_input           0660   system     system
 /dev/hbtp_vm              0660   system     system
 
@@ -374,12 +372,12 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/class/dual_role_usb/*	power_role	0660	system	system
 /sys/class/dual_role_usb/*	mode		0660	system	system
 
-#Memory Offline
+# Memory Offline
 /sys/devices/system/memory/memory* state    0660 system system
 
 /sys/devices/virtual/hdcp/msm_hdcp  min_level_change 0664    system  graphics
 
-#KGSL
+# KGSL
 /sys/class/kgsl/kgsl-3d0    perfcounter              0660    root    shell
 
 # sys-fs display
@@ -415,8 +413,8 @@ firmware_directories /vendor/firmware_mnt/image/
 
 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp power/control 0664 system graphics
 
-#asm330 sensor
-#common sensors files
+# asm330 sensor
+# common sensors files
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   buffer/enable                   0664    system  system
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   buffer/length                   0664    system  system
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   buffer/watermark                0664   system  system
@@ -468,7 +466,6 @@ firmware_directories /vendor/firmware_mnt/image/
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   scan_elements/in_anglvel_z_en    0664    system  system
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   scan_elements/in_anglvel_z_index 0664    system  system
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   scan_elements/in_anglvel_z_type  0664    system  system
-
 
 # standard iio temp attributes
 /sys/devices/platform/soc/*.i2c/i2c-*/*-*/iio:device*   in_temp_offset                  0664    system  system
