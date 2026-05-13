@@ -214,6 +214,43 @@
             <Limit name="frame-rate" range="1-60" />
             <Feature name="adaptive-playback" />
         </MediaCodec>
+        <MediaCodec name="c2.android.av1-dav1d.decoder" type="video/av01" update="true" variant="slow-cpu">
+            <Limit name="size" min="96x96" max="1920x1080" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="24" max="2073600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" update="true" variant="slow-cpu">
+            <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
+            <Limit name="size" min="2x2" max="1280x720" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="8x8" />
+            <Limit name="block-count" range="1-196608" />
+            <Limit name="blocks-per-second" range="1-2000000" />
+            <Limit name="bitrate" range="1-10000000" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
+            <!-- profiles and levels:  ProfileHigh : Level51 -->
+            <Limit name="size" min="2x2" max="1280x720" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="block-count" range="1-3600" />
+            <Limit name="blocks-per-second" range="1-108000" />
+            <Limit name="bitrate" range="1-20000000" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.vp9.decoder" type="video/x-vnd.on2.vp9" update="true" variant="slow-cpu">
+            <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
+            <Limit name="size" min="2x2" max="2048x2048" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="8x8" />
+            <Limit name="block-count" range="1-16384" />
+            <Limit name="blocks-per-second" range="1-500000" />
+            <Limit name="bitrate" range="1-40000000" />
+        </MediaCodec>
     </Decoders>
     <Encoders>
         <!-- C2 encoders -->
@@ -324,4 +361,5 @@
             <Feature name="intra-refresh" />
         </MediaCodec>
     </Encoders>
+    <Include href="media_codecs_google_c2.xml" />
 </MediaCodecs>
