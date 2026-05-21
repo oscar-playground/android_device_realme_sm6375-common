@@ -218,9 +218,6 @@ persist.vendor.sensors.on_change_sample_period=true
 persist.vendor.sensors.support_direct_channel=false
 persist.vendor.sensors.sync_request=true
 
-# Shutdown
-sys.vendor.shutdown.waittime=500
-
 # USB
 sys.usb.mtp.batchcancel=1
 vendor.usb.controller=4e00000.dwc3
