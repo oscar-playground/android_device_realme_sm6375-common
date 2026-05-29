@@ -90,7 +90,6 @@ on post-fs-data
     write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/fs_ready 1
 
 on early-boot
-    start vendor.sensors
     verity_update_state
 
 on boot
