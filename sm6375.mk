@@ -160,6 +160,8 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
+    init.qti.kernel.rc \
+    init.qti.kernel.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.oplus.rc \
