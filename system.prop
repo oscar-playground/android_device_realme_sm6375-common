@@ -20,7 +20,6 @@ dev.pm.dyn_samplingrate=1
 ro.vendor.qti.va_aosp.support=1
 
 # RIL
-DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 
