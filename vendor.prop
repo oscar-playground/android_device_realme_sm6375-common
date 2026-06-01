@@ -199,7 +199,6 @@ debug.stagefright.c2inputsurface=-1
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Radio
-keyguard.no_require_sim=true
 persist.radio.multisim.config=dsds
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.enableadvancedscan=true
