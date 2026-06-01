@@ -13,9 +13,6 @@ ro.vendor.use_data_netmgrd=true
 # GPS
 persist.vendor.overlay.izat.optin=rro
 
-# Graphics
-dev.pm.dyn_samplingrate=1
-
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
