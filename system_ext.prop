@@ -5,7 +5,6 @@ dalvik.vm.dex2oat64.enabled=true
 persist.backup.ntpServer=0.pool.ntp.org
 
 # Media
-media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
 media.stagefright.enable-fma2dp=true
 media.stagefright.enable-http=true
