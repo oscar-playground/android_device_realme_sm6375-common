@@ -10,3 +10,13 @@ ro.bpf.kver_override=5.10.239
 
 # GMS
 ro.opa.device_model_id=ga-oplus-skill-os121-211011
+
+# LMKD
+ro.lmk.kill_heaviest_task=true
+ro.lmk.swap_util_max=90
+ro.lmk.thrashing_limit=30
+ro.lmk.thrashing_limit_decay=25
+ro.lmk.thrashing_limit_critical=30
+ro.lmk.psi_complete_stall_ms=120
+ro.lmk.psi_partial_stall_ms=50
+ro.lmk.filecache_min_kb=300000
