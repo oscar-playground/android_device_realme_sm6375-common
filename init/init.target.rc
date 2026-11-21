@@ -100,7 +100,7 @@ on boot
     write /dev/cpuset/audio-app/cpus 0-3
 
     mkdir /dev/cpuset/surfaceflinger
-    write /dev/cpuset/surfaceflinger/cpus 2-5
+    write /dev/cpuset/surfaceflinger/cpus 6-7
     write /dev/cpuset/surfaceflinger/mems 0
     chown system system /dev/cpuset/surfaceflinger
     chown system system /dev/cpuset/surfaceflinger/tasks
@@ -160,4 +160,3 @@ on property:init.svc.vendor.per_mgr=running
 
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
-
